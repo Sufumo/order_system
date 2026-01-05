@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Selection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-cream: #f9f7f3;
+            --bg-warm: #faf8f5;
+            --text-dark: #2c2c2c;
+            --text-muted: #6b6b6b;
+            --text-light: #8a8a8a;
+            --accent-gold: #b8956b;
+            --accent-burgundy: #7a3e3e;
+            --border-light: #e5e2dc;
+            --shadow-soft: rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lora', Georgia, serif;
+            background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-warm) 100%);
+            min-height: 100vh;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        header h1 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .selection-counter {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px var(--shadow-soft);
+            z-index: 1000;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+
+        .selection-counter .count {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-burgundy);
+        }
+
+        .selection-counter .label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .selection-counter.complete {
+            border-color: var(--accent-gold);
+            background: linear-gradient(135deg, #fdfcfa 0%, #f5f0e8 100%);
+        }
+
+        .restaurant-section {
+            margin-bottom: 60px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px var(--shadow-soft);
+            overflow: hidden;
+        }
+
+        .restaurant-header {
+            background: linear-gradient(135deg, #3d3d3d 0%, #2a2a2a 100%);
+            color: white;
+            padding: 25px 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .restaurant-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .restaurant-info h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+        }
+
+        .restaurant-info .cuisine {
+            font-style: italic;
+            color: var(--accent-gold);
+            font-size: 1rem;
+            margin-top: 3px;
+        }
+
+        .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .menu-table thead {
+            background: var(--bg-cream);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .menu-table th {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 15px 20px;
+            text-align: left;
+        }
+
+        .menu-table th:last-child {
+            text-align: center;
+            width: 130px;
+        }
+
+        .menu-item {
+            border-bottom: 1px dotted var(--border-light);
+            transition: background 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background: var(--bg-cream);
+        }
+
+        .menu-item.selected {
+            background: linear-gradient(135deg, #f8f5f0 0%, #f0ebe3 100%);
+            border-left: 3px solid var(--accent-gold);
+        }
+
+        .menu-item td {
+            padding: 20px;
+            vertical-align: middle;
+        }
+
+        .food-image-cell {
+            width: 180px;
+        }
+
+        .food-image {
+            width: 160px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--shadow-soft);
+        }
+
+        .food-image.placeholder {
+            background: linear-gradient(135deg, #e8e5e0 0%, #d8d5d0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+
+        .food-name {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .food-ingredients {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .food-price {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .quantity-cell {
+            text-align: center;
+        }
+
+        .quantity-control {
+            display: inline-flex;
+            align-items: center;
+            gap: 0;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .quantity-btn {
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: transparent;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quantity-btn:hover:not(:disabled) {
+            background: var(--bg-cream);
+            color: var(--accent-gold);
+        }
+
+        .quantity-btn:active:not(:disabled) {
+            background: var(--border-light);
+        }
+
+        .quantity-btn:disabled {
+            color: var(--border-light);
+            cursor: not-allowed;
+        }
+
+        .quantity-btn.minus {
+            border-right: 1px solid var(--border-light);
+        }
+
+        .quantity-btn.plus {
+            border-left: 1px solid var(--border-light);
+        }
+
+        .quantity-value {
+            width: 40px;
+            text-align: center;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .quantity-value.has-value {
+            color: var(--accent-burgundy);
+        }
+
+        .quantity-control.active {
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 2px rgba(184, 149, 107, 0.15);
+        }
+
+        .submit-section {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 1px solid var(--border-light);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 0 -4px 20px var(--shadow-soft);
+            z-index: 1000;
+        }
+
+        .submit-message {
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .submit-message.error {
+            color: var(--accent-burgundy);
+        }
+
+        .submit-message.success {
+            color: #4a7c4e;
+        }
+
+        .submit-btn {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: var(--border-light);
+            color: var(--text-muted);
+        }
+
+        .submit-btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .submit-btn.ready {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #a07850 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(184, 149, 107, 0.3);
+        }
+
+        .submit-btn.ready:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(184, 149, 107, 0.4);
+        }
+
+        .footer-spacer {
+            height: 100px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .food-image-cell {
+                width: 140px;
+            }
+            .food-image {
+                width: 120px;
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            header h1 {
+                font-size: 2.5rem;
+                letter-spacing: 0.2em;
+            }
+
+            .restaurant-header {
+                padding: 20px;
+            }
+
+            .restaurant-info h2 {
+                font-size: 1.4rem;
+            }
+
+            .menu-table th,
+            .menu-item td {
+                padding: 12px 10px;
+            }
+
+            .food-image-cell {
+                width: 100px;
+            }
+
+            .food-image {
+                width: 80px;
+                height: 60px;
+            }
+
+            .food-name {
+                font-size: 1.1rem;
+            }
+
+            .food-ingredients {
+                font-size: 0.85rem;
+            }
+
+            .selection-counter {
+                top: auto;
+                bottom: 100px;
+                right: 10px;
+                padding: 10px 15px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .restaurant-section {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        .restaurant-section:nth-child(2) { animation-delay: 0.1s; }
+        .restaurant-section:nth-child(3) { animation-delay: 0.2s; }
+        .restaurant-section:nth-child(4) { animation-delay: 0.3s; }
+        .restaurant-section:nth-child(5) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Menu Selection</h1>
+            <p>Please select exactly 9 dishes from our curated collection</p>
+        </header>
+
+        <div class="selection-counter" id="selectionCounter">
+            <span class="count" id="selectedCount">0</span><span class="count">/9</span>
+            <div class="label">dishes selected</div>
+        </div>
+
+        <div id="menuContainer">
+            <!-- Menu content will be loaded here -->
+        </div>
+
+        <div class="footer-spacer"></div>
+    </div>
+
+    <div class="submit-section">
+        <span class="submit-message" id="submitMessage">Select 9 dishes to continue</span>
+        <button class="submit-btn" id="submitBtn" disabled>Submit Selection</button>
+    </div>
+
+    <script>
+        let menuData = null;
+        let selectedItems = {}; // { itemId: { food: foodData, quantity: number } }
+
+        // Load the JSON data
+        async function loadMenuData() {
+            try {
+                const response = await fetch('output/shops_translated.json');
+                menuData = await response.json();
+                renderMenu();
+            } catch (error) {
+                console.error('Error loading menu data:', error);
+                document.getElementById('menuContainer').innerHTML = `
+                    <div style="text-align: center; padding: 50px; color: var(--text-muted);">
+                        <p>Error loading menu data. Please ensure shops_translated.json exists in the output folder.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Get total quantity selected
+        function getTotalQuantity() {
+            return Object.values(selectedItems).reduce((sum, item) => sum + item.quantity, 0);
+        }
+
+        // Render the menu
+        function renderMenu() {
+            const container = document.getElementById('menuContainer');
+            let html = '';
+
+            for (const [shopKey, shop] of Object.entries(menuData.shops)) {
+                // Filter out non-food items (cutlery, invoices, etc.)
+                const realFoods = shop.foods.filter(food => {
+                    const name = (food.name_en || food.name_original || '').toLowerCase();
+                    const excludeKeywords = ['cutlery', 'tableware', 'chopstick', 'invoice', 'gloves', 
+                                           'ice pack', 'no need', 'not supported', 'utensil'];
+                    return food.price > 0 && !excludeKeywords.some(kw => name.includes(kw));
+                });
+
+                if (realFoods.length === 0) continue;
+
+                html += `
+                    <div class="restaurant-section">
+                        <div class="restaurant-header">
+                            ${shop.poi_icon ? `<img src="${shop.poi_icon}" alt="${shop.english_name}" class="restaurant-icon">` : ''}
+                            <div class="restaurant-info">
+                                <h2>${shop.english_name}</h2>
+                                <div class="cuisine">${shop.cuisine}</div>
+                            </div>
+                        </div>
+                        <table class="menu-table">
+                            <thead>
+                                <tr>
+                                    <th>Photo</th>
+                                    <th>English</th>
+                                    <th>Español</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${realFoods.map((food, index) => renderFoodItem(food, shopKey, index)).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = html;
+            attachQuantityListeners();
+        }
+
+        // Render a single food item
+        function renderFoodItem(food, shopKey, index) {
+            const itemId = `${shopKey}_${index}`;
+            const ingredientsEn = (food.ingredients_en || food.ingredients || []).join(', ');
+            const ingredientsEs = (food.ingredients_es || []).join(', ');
+            
+            return `
+                <tr class="menu-item" data-item-id="${itemId}">
+                    <td class="food-image-cell">
+                        ${food.picture ? 
+                            `<img src="${food.picture}" alt="${food.name_en}" class="food-image" onerror="this.classList.add('placeholder'); this.outerHTML='<div class=\\'food-image placeholder\\'>No Image</div>'">` :
+                            `<div class="food-image placeholder">No Image</div>`
+                        }
+                    </td>
+                    <td>
+                        <div class="food-name">${food.name_en || food.name_original}</div>
+                        <div class="food-ingredients">${ingredientsEn || 'No ingredients listed'}</div>
+                        <div class="food-price">¥${food.price.toFixed(2)}</div>
+                    </td>
+                    <td>
+                        <div class="food-name">${food.name_es || food.name_original}</div>
+                        <div class="food-ingredients">${ingredientsEs || 'Sin ingredientes listados'}</div>
+                    </td>
+                    <td class="quantity-cell">
+                        <div class="quantity-control" data-item-id="${itemId}">
+                            <button class="quantity-btn minus" data-action="decrease" disabled>−</button>
+                            <span class="quantity-value">0</span>
+                            <button class="quantity-btn plus" data-action="increase" data-food='${JSON.stringify(food).replace(/'/g, "&#39;")}'>+</button>
+                        </div>
+                    </td>
+                </tr>
+            `;
+        }
+
+        // Attach event listeners to quantity controls
+        function attachQuantityListeners() {
+            document.querySelectorAll('.quantity-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const control = this.closest('.quantity-control');
+                    const itemId = control.dataset.itemId;
+                    const row = document.querySelector(`tr[data-item-id="${itemId}"]`);
+                    const valueEl = control.querySelector('.quantity-value');
+                    const minusBtn = control.querySelector('.minus');
+                    const plusBtn = control.querySelector('.plus');
+                    const action = this.dataset.action;
+                    
+                    let currentQty = selectedItems[itemId]?.quantity || 0;
+                    const totalQty = getTotalQuantity();
+                    
+                    if (action === 'increase') {
+                        // Can't add more if already at 9 total
+                        if (totalQty >= 9) return;
+                        
+                        currentQty++;
+                        if (!selectedItems[itemId]) {
+                            const food = JSON.parse(plusBtn.dataset.food);
+                            selectedItems[itemId] = { food, quantity: currentQty };
+                        } else {
+                            selectedItems[itemId].quantity = currentQty;
+                        }
+                    } else if (action === 'decrease') {
+                        if (currentQty <= 0) return;
+                        currentQty--;
+                        if (currentQty === 0) {
+                            delete selectedItems[itemId];
+                        } else {
+                            selectedItems[itemId].quantity = currentQty;
+                        }
+                    }
+                    
+                    // Update UI
+                    valueEl.textContent = currentQty;
+                    valueEl.classList.toggle('has-value', currentQty > 0);
+                    minusBtn.disabled = currentQty === 0;
+                    control.classList.toggle('active', currentQty > 0);
+                    row.classList.toggle('selected', currentQty > 0);
+                    
+                    // Update plus buttons based on total
+                    updatePlusButtons();
+                    updateSelectionUI();
+                });
+            });
+        }
+
+        // Update all plus buttons based on total quantity
+        function updatePlusButtons() {
+            const totalQty = getTotalQuantity();
+            document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
+                btn.disabled = totalQty >= 9;
+            });
+        }
+
+        // Update selection UI
+        function updateSelectionUI() {
+            const count = getTotalQuantity();
+            const counter = document.getElementById('selectionCounter');
+            const countEl = document.getElementById('selectedCount');
+            const message = document.getElementById('submitMessage');
+            const btn = document.getElementById('submitBtn');
+
+            countEl.textContent = count;
+
+            if (count === 9) {
+                counter.classList.add('complete');
+                message.textContent = 'Perfect! You can now submit your selection';
+                message.className = 'submit-message success';
+                btn.disabled = false;
+                btn.classList.add('ready');
+            } else if (count > 9) {
+                counter.classList.remove('complete');
+                message.textContent = `Too many selections (${count}/9). Please remove some items.`;
+                message.className = 'submit-message error';
+                btn.disabled = true;
+                btn.classList.remove('ready');
+            } else {
+                counter.classList.remove('complete');
+                message.textContent = `Select ${9 - count} more dish${9 - count !== 1 ? 'es' : ''} to continue`;
+                message.className = 'submit-message';
+                btn.disabled = true;
+                btn.classList.remove('ready');
+            }
+        }
+
+        // Submit selection
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            if (getTotalQuantity() !== 9) return;
+
+            const selectedFoods = [];
+            for (const [itemId, item] of Object.entries(selectedItems)) {
+                const food = item.food;
+                selectedFoods.push({
+                    name_en: food.name_en,
+                    name_es: food.name_es,
+                    name_original: food.name_original,
+                    ingredients_en: food.ingredients_en || food.ingredients || [],
+                    ingredients_es: food.ingredients_es || [],
+                    price: food.price,
+                    picture: food.picture,
+                    quantity: item.quantity
+                });
+            }
+
+            const exportData = {
+                total_dishes: getTotalQuantity(),
+                unique_dishes: selectedFoods.length,
+                selected_at: new Date().toISOString(),
+                dishes: selectedFoods
+            };
+
+            // Create and download JSON file
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `menu_selection_${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('Selection downloaded successfully!');
+        });
+
+        // Initialize
+        loadMenuData();
+    </script>
+</body>
+</html>
+

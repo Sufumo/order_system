@@ -1,0 +1,1986 @@
+{
+  "total_shops": 19,
+  "generated_at": "2026-01-05T13:13:56.979983",
+  "shops": {
+    "DA·MARCO (Italian)": {
+      "original_name": "DA·MARCO大马可意大利餐厅",
+      "english_name": "DA·MARCO",
+      "cuisine": "Italian",
+      "display_name": "DA·MARCO (Italian)",
+      "poi_icon": "http://p0.meituan.net/waimaipoi/994c39af95615aa9ce77e3998ba19e63219695.jpg",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "Pizza margherita玛格丽塔披萨",
+          "name_en": "Margherita Pizza",
+          "name_es": "Pizza Margherita",
+          "ingredients_en": [
+            "Dough",
+            "Tomato",
+            "Mozzarella",
+            "Basil",
+            "Olive"
+          ],
+          "ingredients_es": [
+            "Masa",
+            "Tomate",
+            "Mozzarella",
+            "Albahaca",
+            "Aceite"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/de06da202063bf07e651585a6ada3f0a827346.jpg",
+          "price": 108.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "Fettuccine Bolognese自制意大利肉酱宽面",
+          "name_en": "Fettuccine Bolognese",
+          "name_es": "Fettuccine a la Boloñesa",
+          "ingredients_en": [
+            "Fettuccine",
+            "Beef",
+            "Tomato",
+            "Onion",
+            "Garlic"
+          ],
+          "ingredients_es": [
+            "Fettuccine",
+            "Carne de res",
+            "Tomate",
+            "Cebolla",
+            "Ajo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/1b1762869070b955fc34bb68a655ede31038166.jpg",
+          "price": 98.0,
+          "spec_original": ""
+        }
+      ]
+    },
+    "EliFalafel (Lebanese)": {
+      "original_name": "EliFalafel黎巴嫩美食(九江路店)",
+      "english_name": "EliFalafel",
+      "cuisine": "Lebanese",
+      "display_name": "EliFalafel (Lebanese)",
+      "poi_icon": "http://p0.meituan.net/business/5e08db65949c30dc64868dfb7d818280188172.png",
+      "order_count": 5,
+      "foods": [
+        {
+          "name_original": "关于报销凭证 About Invoices",
+          "name_en": "About Invoices",
+          "name_es": "Sobre Facturas",
+          "ingredients_en": [
+            "Invoice",
+            "Receipt",
+            "Payment",
+            "Document",
+            "Claim"
+          ],
+          "ingredients_es": [
+            "Factura",
+            "Recibo",
+            "Pago",
+            "Documento",
+            "Reclamo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/e5f9d9ed5dac1f6275d3c0a6905308e657013.jpg",
+          "price": 0.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "关于皮塔饼 About Bread",
+          "name_en": "About Bread",
+          "name_es": "Sobre Pan",
+          "ingredients_en": [
+            "Bread"
+          ],
+          "ingredients_es": [
+            "Pan"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/6e533d5e269935a8c1dd5a880a531ed967298.jpg.webp",
+          "price": 0.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "香烤鸡肉卷 Chicken Shish Taouk Wrap",
+          "name_en": "Grilled Chicken Wrap",
+          "name_es": "Wrap de Pollo a la Parrilla",
+          "ingredients_en": [
+            "Chicken",
+            "Wrap",
+            "Garlic",
+            "Lemon",
+            "Spices"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Wrap",
+            "Ajo",
+            "Limón",
+            "Especias"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/3499f310e81239f98826332e79002de9516811.jpg",
+          "price": 48.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "关于冰袋 About ice pack",
+          "name_en": "About Ice Pack",
+          "name_es": "Sobre la bolsa de hielo",
+          "ingredients_en": [
+            "Ice",
+            "Pack"
+          ],
+          "ingredients_es": [
+            "Hielo",
+            "Bolsa"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/342055e9ad93004e818103360065b04a52330.jpg",
+          "price": 0.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "外卖自取单不支持堂食",
+          "name_en": "Takeout Order Not Supported for Dine-in",
+          "name_es": "Pedido para llevar no soportado para comer en el lugar",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/wmproduct/68d9c40d21f2955ed15537b05845a3d149206.jpg",
+          "price": 0.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "鸡肉皮塔卷 Chicken Shawarma Wrap",
+          "name_en": "Chicken Shawarma Wrap",
+          "name_es": "Wrap de Shawarma de Pollo",
+          "ingredients_en": [
+            "Chicken",
+            "Pita",
+            "Lettuce",
+            "Tomato",
+            "Sauce"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Pita",
+            "Lechuga",
+            "Tomate",
+            "Salsa"
+          ],
+          "picture": "http://p1.meituan.net/wmproductdwm/c57be67ce440dccda21fed8ae4babe8c104135.jpg.webp",
+          "price": 288.0,
+          "spec_original": "1人份"
+        }
+      ]
+    },
+    "Fu Mao Crawfish (Chinese)": {
+      "original_name": "复茂小龙虾（淮海东路店）",
+      "english_name": "Fu Mao Crawfish",
+      "cuisine": "Chinese",
+      "display_name": "Fu Mao Crawfish (Chinese)",
+      "poi_icon": "http://p0.meituan.net/waimaipoi/9361abe22b2d40449d361e0961026e9d47663.jpg",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "烤掌中宝（3串）",
+          "name_en": "Grilled Chicken Skewers",
+          "name_es": "Brochetas de Pollo a la Parrilla",
+          "ingredients_en": [
+            "Chicken",
+            "Skewers",
+            "Spices",
+            "Sauce",
+            "Vegetables"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Brochetas",
+            "Especias",
+            "Salsa",
+            "Verduras"
+          ],
+          "picture": "http://p0.meituan.net/xianfu/5b564405c374f2b8dff16b6f70a6852b59395.jpg",
+          "price": 15.0,
+          "spec_original": "标准"
+        },
+        {
+          "name_original": "烤土豆片（3串）",
+          "name_en": "Grilled Potato Skewers",
+          "name_es": "Brochetas de Patata a la Parrilla",
+          "ingredients_en": [
+            "Potato",
+            "Skewer",
+            "Salt",
+            "Pepper",
+            "Oil"
+          ],
+          "ingredients_es": [
+            "Patata",
+            "Brocheta",
+            "Sal",
+            "Pimienta",
+            "Aceite"
+          ],
+          "picture": "http://p0.meituan.net/xianfu/6b26d94793c64a9c697a8cff0228712437803.jpg",
+          "price": 9.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "孜然烤羊肉串",
+          "name_en": "Cumin Grilled Lamb Skewers",
+          "name_es": "Brochetas de Cordero al Comino",
+          "ingredients_en": [
+            "Cumin",
+            "Lamb",
+            "Skewers",
+            "Garlic",
+            "Pepper"
+          ],
+          "ingredients_es": [
+            "Comino",
+            "Cordero",
+            "Brochetas",
+            "Ajo",
+            "Pimienta"
+          ],
+          "picture": "http://p1.meituan.net/xianfu/84800b115d91f6fbd806ff2de6762e5d57456.jpg",
+          "price": 24.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "烤牛板筋（3串）",
+          "name_en": "Grilled Beef Tendons",
+          "name_es": "Tendones de Res a la Parrilla",
+          "ingredients_en": [
+            "Beef",
+            "Skewers",
+            "Salt",
+            "Pepper",
+            "Garlic"
+          ],
+          "ingredients_es": [
+            "Res",
+            "Brochetas",
+            "Sal",
+            "Pimienta",
+            "Ajo"
+          ],
+          "picture": "http://p0.meituan.net/xianfu/2833526ef206a7f64bc7050f102f420739179.jpg",
+          "price": 15.0,
+          "spec_original": "标准"
+        },
+        {
+          "name_original": "烤金针菇",
+          "name_en": "Grilled Enoki Mushrooms",
+          "name_es": "Setas Enoki a la Parrilla",
+          "ingredients_en": [
+            "Mushrooms",
+            "Oil",
+            "Salt",
+            "Pepper",
+            "Garlic"
+          ],
+          "ingredients_es": [
+            "Setas",
+            "Aceite",
+            "Sal",
+            "Pimienta",
+            "Ajo"
+          ],
+          "picture": "http://p0.meituan.net/xianfu/bc18d1bf1923297625a5960f697b9afc42734.jpg",
+          "price": 12.8,
+          "spec_original": "标准"
+        }
+      ]
+    },
+    "HOMESLICE (Italian)": {
+      "original_name": "HOMESLICE斯莱仕披萨(静安店)",
+      "english_name": "HOMESLICE",
+      "cuisine": "Italian",
+      "display_name": "HOMESLICE (Italian)",
+      "poi_icon": "http://p1.meituan.net/waimaipoi/d1b5e4d45e4418236592517f7f7053e5175328.jpg",
+      "order_count": 4,
+      "foods": [
+        {
+          "name_original": "单只装-需要手套 Gloves",
+          "name_en": "Single Pack - Gloves Needed",
+          "name_es": "Paquete Único - Se Necesitan Guantes",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/wmproduct/75bc4589b7e909f716efbb17c8e5e7b9264496.jpg.webp",
+          "price": 0.0,
+          "spec_original": "1只"
+        },
+        {
+          "name_original": "绝对素食 Super Vegan",
+          "name_en": "Super Vegan",
+          "name_es": "Súper Vegano",
+          "ingredients_en": [
+            "Vegetables",
+            "Tofu",
+            "Lentils",
+            "Quinoa",
+            "Spices"
+          ],
+          "ingredients_es": [
+            "Verduras",
+            "Tofu",
+            "Lentejas",
+            "Quinoa",
+            "Especias"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/ed4a304ea0c1d458f90d1a8735bf2985149085.jpg",
+          "price": 155.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "贝贝罗尼 Pepperoni",
+          "name_en": "Baby Pepperoni",
+          "name_es": "Pepperoni Bebé",
+          "ingredients_en": [
+            "Pepperoni",
+            "Cheese",
+            "Dough",
+            "Tomato",
+            "Oregano"
+          ],
+          "ingredients_es": [
+            "Pepperoni",
+            "Queso",
+            "Masa",
+            "Tomate",
+            "Orégano"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/319d5e1c6a09b3e649cbc9787f8ef421155648.jpg.webp",
+          "price": 145.0,
+          "spec_original": "16英寸(2-3人)"
+        },
+        {
+          "name_original": "至尊肉肠披萨 Supreme",
+          "name_en": "Supreme Sausage Pizza",
+          "name_es": "Pizza Suprema de Salchicha",
+          "ingredients_en": [
+            "Sausage",
+            "Cheese",
+            "Tomato",
+            "Pepper",
+            "Onion"
+          ],
+          "ingredients_es": [
+            "Salchicha",
+            "Queso",
+            "Tomate",
+            "Pimiento",
+            "Cebolla"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/bd9b34d9d6a8a79fb9436c2421ab8e2c146230.jpg",
+          "price": 165.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "白芝士 White",
+          "name_en": "White Cheese",
+          "name_es": "Queso Blanco",
+          "ingredients_en": [
+            "Cheese"
+          ],
+          "ingredients_es": [
+            "Queso"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/ad13e93789a2ea00ad90e341b60c80b2137811.jpg.webp",
+          "price": 145.0,
+          "spec_original": "16英寸(2-3人)"
+        },
+        {
+          "name_original": "16\"白芝士/洋蓟香肠 W+A",
+          "name_en": "16\" White Cheese/Artichoke Sausage W+A",
+          "name_es": "Salchicha de Alcachofa y Queso Blanco de 16\" W+A",
+          "ingredients_en": [
+            "Cheese",
+            "Sausage",
+            "Artichoke"
+          ],
+          "ingredients_es": [
+            "Queso",
+            "Salchicha",
+            "Alcachofa"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/d4dd8ad7b052955d8bed2300c5d4a15a97413.jpg.webp",
+          "price": 155.0,
+          "spec_original": "16英寸"
+        },
+        {
+          "name_original": "16\"蒜味蘑菇/肉披萨 G+M",
+          "name_en": "Garlic Mushroom Meat Pizza",
+          "name_es": "Pizza de Carne con Champiñones al Ajo",
+          "ingredients_en": [
+            "Garlic",
+            "Mushroom",
+            "Meat",
+            "Cheese",
+            "Dough"
+          ],
+          "ingredients_es": [
+            "Ajo",
+            "Champiñón",
+            "Carne",
+            "Queso",
+            "Masa"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/751e5a29f62024e5a67e8feced97ec99108996.jpg.webp",
+          "price": 155.0,
+          "spec_original": "16英寸"
+        }
+      ]
+    },
+    "Xun Xiang Ji (Chinese)": {
+      "original_name": "巡湘记·湖南小炒（打浦桥日月光店）",
+      "english_name": "Xun Xiang Ji",
+      "cuisine": "Chinese",
+      "display_name": "Xun Xiang Ji (Chinese)",
+      "poi_icon": "http://p0.meituan.net/waimaipoi/7760c17eedbf6dfe4b6d78cb50989d201549761.png",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "一次性筷套",
+          "name_en": "Disposable Chopstick Cover",
+          "name_es": "Cubierta desechable para palillos",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/wmproduct/3584b9fd1a5ffb41fb51ed62da03cf4155122.jpg.webp",
+          "price": 1.5,
+          "spec_original": "1个"
+        },
+        {
+          "name_original": "招牌小炒随心套餐【15选4】",
+          "name_en": "Signature Stir-Fry Set Meal",
+          "name_es": "Menú de Salteado Firmado",
+          "ingredients_en": [
+            "Rice",
+            "Egg",
+            "Tomato",
+            "Bean",
+            "Pork"
+          ],
+          "ingredients_es": [
+            "Arroz",
+            "Huevo",
+            "Tomate",
+            "Frijol",
+            "Cerdo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/a2394fe0bf8c8a546747163753feee2d124805.jpg.webp",
+          "price": 40.9,
+          "spec_original": "1人份，农家一碗香（小份），腊味刀豆丝（小份），番茄炒鸡蛋（小份），白米饭"
+        }
+      ]
+    },
+    "Little Yang Sheng Jian (Chinese)": {
+      "original_name": "小杨生煎(香港名都店)",
+      "english_name": "Little Yang Sheng Jian",
+      "cuisine": "Chinese",
+      "display_name": "Little Yang Sheng Jian (Chinese)",
+      "poi_icon": "http://p0.meituan.net/waimaipoi/808d255cbdc8546c79802f7df0fc9390616770.jpg",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "一次性餐具",
+          "name_en": "Disposable Tableware",
+          "name_es": "Vajilla Desechable",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/xianfu/a0a79eac74d8cf3d53cc87a38e5a6fd1172610.png.webp",
+          "price": 0.0,
+          "spec_original": "标准"
+        },
+        {
+          "name_original": "三拼-蟹粉小杨藤椒大虾生煎",
+          "name_en": "Three Delicacies - Crab Roe Shrimp",
+          "name_es": "Tres Delicias - Camarones con Huevas de Cangrejo",
+          "ingredients_en": [
+            "Crab",
+            "Shrimp",
+            "Pepper",
+            "Garlic",
+            "Dough"
+          ],
+          "ingredients_es": [
+            "Cangrejo",
+            "Camarón",
+            "Pimiento",
+            "Ajo",
+            "Masa"
+          ],
+          "picture": "http://p0.meituan.net/xianfu/dc623d0b818a50b4dfb562337ef03c86165982.jpg.webp",
+          "price": 115.2,
+          "spec_original": "标准"
+        }
+      ]
+    },
+    "SULTAN (Turkish)": {
+      "original_name": "SULTAN·土耳其餐厅（上海店）",
+      "english_name": "SULTAN",
+      "cuisine": "Turkish",
+      "display_name": "SULTAN (Turkish)",
+      "poi_icon": "http://p0.meituan.net/business/12392c3c9ffbad163b4892237c1b91ed66671.jpg",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "开胃小食拼盘NIXED APPETIZERS",
+          "name_en": "Nixed Appetizers",
+          "name_es": "Aperitivos Mezclados",
+          "ingredients_en": [
+            "Appetizers",
+            "Dips",
+            "Vegetables",
+            "Meats",
+            "Cheese"
+          ],
+          "ingredients_es": [
+            "Aperitivos",
+            "Salsas",
+            "Verduras",
+            "Carnes",
+            "Queso"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/f15d81646da76d2c81ecdfcfc1922d4d1874595.png",
+          "price": 88.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "菠菜芝士馅饼Pide with Cheese/Spinach",
+          "name_en": "Spinach Cheese Pie",
+          "name_es": "Empanada de Espinacas y Queso",
+          "ingredients_en": [
+            "Spinach",
+            "Cheese",
+            "Dough",
+            "Onion",
+            "Egg"
+          ],
+          "ingredients_es": [
+            "Espinaca",
+            "Queso",
+            "Masa",
+            "Cebolla",
+            "Huevo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/c35f9c05a30336e96eb31b996dd1cd4f2732079.png",
+          "price": 78.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "番茜沙拉TABOULEH",
+          "name_en": "Parsley Salad Tabouleh",
+          "name_es": "Ensalada de Perejil Tabulé",
+          "ingredients_en": [
+            "Parsley",
+            "Bulgar",
+            "Tomato",
+            "Cucumber",
+            "Lemon"
+          ],
+          "ingredients_es": [
+            "Perejil",
+            "Bulgur",
+            "Tomate",
+            "Pepino",
+            "Limón"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/e8db814fe32ee0152b0f15dcacb354d3744029.png",
+          "price": 52.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "地中海沙拉MEDITERRANEAN SALAD",
+          "name_en": "Mediterranean Salad",
+          "name_es": "Ensalada Mediterránea",
+          "ingredients_en": [
+            "Lettuce",
+            "Tomato",
+            "Cucumber",
+            "Olive",
+            "Feta"
+          ],
+          "ingredients_es": [
+            "Lechuga",
+            "Tomate",
+            "Pepino",
+            "Aceituna",
+            "Feta"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/d0e51ca4808ddc74b15f38e4e2abf9ee2308935.png",
+          "price": 58.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "贝尔贝里面包BERBERI BREAD",
+          "name_en": "Berberi Bread",
+          "name_es": "Pan Berberi",
+          "ingredients_en": [
+            "Bread",
+            "Spices",
+            "Olive",
+            "Garlic",
+            "Herbs"
+          ],
+          "ingredients_es": [
+            "Pan",
+            "Especias",
+            "Aceite de oliva",
+            "Ajo",
+            "Hierbas"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/7d7b642a41e0cd95a8b4ab5bd5de49192482471.png",
+          "price": 28.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "特色什锦咔吧（大份）SULTAN LARGE",
+          "name_en": "Sultan Large",
+          "name_es": "Sultán Grande",
+          "ingredients_en": [
+            "Chicken",
+            "Rice",
+            "Vegetables",
+            "Spices",
+            "Sauce"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Arroz",
+            "Verduras",
+            "Especias",
+            "Salsa"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/91551cd6e0a8bffc8790fe792e2fa95e2934163.png",
+          "price": 228.0,
+          "spec_original": ""
+        }
+      ]
+    },
+    "Burrito El Patron (Mexican)": {
+      "original_name": "Burrito El Patron墨西哥餐厅（金鹰美食城店）",
+      "english_name": "Burrito El Patron",
+      "cuisine": "Mexican",
+      "display_name": "Burrito El Patron (Mexican)",
+      "poi_icon": "http://p0.meituan.net/business/3ddd209010532386129e0d2f82b9adf190438.jpg",
+      "order_count": 3,
+      "foods": [
+        {
+          "name_original": "双层芝士塔可Double Stacked Taco",
+          "name_en": "Double Stacked Taco",
+          "name_es": "Taco Doble Apilado",
+          "ingredients_en": [
+            "Beef",
+            "Sour Cream"
+          ],
+          "ingredients_es": [
+            "Carne",
+            "Crema Agria"
+          ],
+          "picture": "http://p0.meituan.net/xianfu/d252ee0149e5f52166789aad0c9d7d64125783.jpg.webp",
+          "price": 64.0,
+          "spec_original": "1个 One，辣牛肉 Ground Beef，酸奶油Sour Cream"
+        },
+        {
+          "name_original": "旧金山卷 S.F Burrito",
+          "name_en": "S.F Burrito",
+          "name_es": "Burrito S.F",
+          "ingredients_en": [
+            "Flour",
+            "Chicken",
+            "Sour Cream",
+            "Chips"
+          ],
+          "ingredients_es": [
+            "Harina",
+            "Pollo",
+            "Crema Agria",
+            "Chips"
+          ],
+          "picture": "http://p1.meituan.net/xianfu/1f6e2a2be7e52ff01c61206c4a5fc1dd116170.jpg.webp",
+          "price": 134.0,
+          "spec_original": "小麦Flour，鸡腿肉chicken，酸奶油Sour Cream，卡真三角片Chips"
+        },
+        {
+          "name_original": "鸡肉碗Chicken Bowl",
+          "name_en": "Chicken Bowl",
+          "name_es": "Tazón de Pollo",
+          "ingredients_en": [
+            "Chicken",
+            "Salad",
+            "Cheese",
+            "Peppers",
+            "Beans"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Ensalada",
+            "Queso",
+            "Pimientos",
+            "Frijoles"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/e1ccc190f7fb7b4ac19933f2d6ddd1542253215.jpg.webp",
+          "price": 120.0,
+          "spec_original": "100克鸡腿肉，不要主食No Base，沙拉菜Salad Mix，马苏里拉芝士Cheese，沙拉菜Salad Mix，甜椒法西塔Fajitas，花斑豆Beans，碎番茄莎莎Tomato，烟熏美乃滋Chipotle"
+        }
+      ]
+    },
+    "Green&Tasty (American)": {
+      "original_name": "Green&Tasty绿塔(新天地店)",
+      "english_name": "Green&Tasty",
+      "cuisine": "American",
+      "display_name": "Green&Tasty (American)",
+      "poi_icon": "http://p0.meituan.net/business/0f01a6d9f894295e63586a818e1ea3a581906.png",
+      "order_count": 13,
+      "foods": [
+        {
+          "name_original": "满分三文鱼谷物碗",
+          "name_en": "Perfect Salmon Grain Bowl",
+          "name_es": "Tazón de Granos de Salmón Perfecto",
+          "ingredients_en": [
+            "Quinoa",
+            "Sweet Potato",
+            "Vegetables",
+            "Cabbage"
+          ],
+          "ingredients_es": [
+            "Quinua",
+            "Batata",
+            "Verduras",
+            "Repollo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/df2a946a7a4d03b705badf404e3c8dd7361472.jpg.webp",
+          "price": 232.0,
+          "spec_original": "1人份，藜麦杂粮饭brown，烤番薯sweet potato，地中海烤时蔬meditrnean，紫甘蓝沙拉pplCabbage，无需酱汁no"
+        },
+        {
+          "name_original": "烟熏三文鱼田园沙拉",
+          "name_en": "Smoked Salmon Garden Salad",
+          "name_es": "Ensalada de Jardín con Salmón Ahumado",
+          "ingredients_en": [
+            "Salmon",
+            "Lettuce",
+            "Tomato",
+            "Cucumber",
+            "Dressing"
+          ],
+          "ingredients_es": [
+            "Salmón",
+            "Lechuga",
+            "Tomate",
+            "Pepino",
+            "Aderezo"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/4d8fb982544cdfd0280a830c87b9c870410496.jpg.webp",
+          "price": 147.0,
+          "spec_original": "1人份，无需no，ENGLISH，中文已选"
+        },
+        {
+          "name_original": "超级安格斯牛排谷物碗",
+          "name_en": "Super Angus Steak Grain Bowl",
+          "name_es": "Super Cuenco de Grano de Angus",
+          "ingredients_en": [
+            "Quinoa",
+            "Steak",
+            "Pepper",
+            "Sauce",
+            "Grains"
+          ],
+          "ingredients_es": [
+            "Quinua",
+            "Bistec",
+            "Pimienta",
+            "Salsa",
+            "Granos"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/8f697015d88c156465ba1ad59bd68ec4328380.jpg.webp",
+          "price": 234.0,
+          "spec_original": "1人份，藜麦杂粮饭brown，需要黑椒汁yes"
+        },
+        {
+          "name_original": "托斯卡纳三文鱼意面",
+          "name_en": "Tuscany Salmon Pasta",
+          "name_es": "Pasta de Salmón Toscana",
+          "ingredients_en": [
+            "Salmon",
+            "Pasta",
+            "Garlic",
+            "Olive",
+            "Parsley"
+          ],
+          "ingredients_es": [
+            "Salmón",
+            "Pasta",
+            "Ajo",
+            "Aceite",
+            "Perejil"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/09d29a71e8a2e4e87ea2c0548d36b207378031.jpg.webp",
+          "price": 62.0,
+          "spec_original": "1人份，无需no"
+        },
+        {
+          "name_original": "三文鱼滑蛋和风碗",
+          "name_en": "Salmon and Egg Bowl",
+          "name_es": "Tazón de Salmón y Huevo",
+          "ingredients_en": [
+            "Salmon",
+            "Egg",
+            "Rice",
+            "Soy",
+            "Seaweed"
+          ],
+          "ingredients_es": [
+            "Salmón",
+            "Huevo",
+            "Arroz",
+            "Salsa de soja",
+            "Alga"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/e904180d29a53256312d6d04d8bb674a177211.jpg",
+          "price": 44.98,
+          "spec_original": ""
+        },
+        {
+          "name_original": "奶油蘑菇虾仁意面",
+          "name_en": "Creamy Mushroom Shrimp Pasta",
+          "name_es": "Pasta Cremosa de Champiñones y Camarones",
+          "ingredients_en": [
+            "Cream",
+            "Mushroom",
+            "Shrimp",
+            "Pasta",
+            "Garlic"
+          ],
+          "ingredients_es": [
+            "Crema",
+            "Champiñón",
+            "Camarón",
+            "Pasta",
+            "Ajo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/2da56613f7ba74c759bdaff216cc8b16431909.jpg.webp",
+          "price": 116.0,
+          "spec_original": "1人份，无需no，细面spgheti"
+        },
+        {
+          "name_original": "活力姐姐三文鱼沙拉",
+          "name_en": "Vibrant Sister Salmon Salad",
+          "name_es": "Ensalada de Salmón de Hermana Vibrante",
+          "ingredients_en": [
+            "Salmon",
+            "Lettuce",
+            "Avocado",
+            "Tomato",
+            "Cucumber"
+          ],
+          "ingredients_es": [
+            "Salmón",
+            "Lechuga",
+            "Aguacate",
+            "Tomate",
+            "Pepino"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/99a54af03c1b5d1b49d7f929f5fabe91535112.jpg",
+          "price": 68.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "彩椒黑醋烤蘑菇",
+          "name_en": "Roasted Mushrooms with Black Vinegar and Bell Peppers",
+          "name_es": "Champiñones Asados con Vinagre Negro y Pimientos",
+          "ingredients_en": [
+            "Mushrooms",
+            "Vinegar",
+            "Peppers",
+            "Garlic",
+            "Soy"
+          ],
+          "ingredients_es": [
+            "Champiñones",
+            "Vinagre",
+            "Pimientos",
+            "Ajo",
+            "Salsa de Soja"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/d02ec09266282d567171f11c6cadebe7249747.jpg",
+          "price": 13.2,
+          "spec_original": ""
+        },
+        {
+          "name_original": "花果山盛宴沙拉",
+          "name_en": "Flower Fruit Mountain Feast Salad",
+          "name_es": "Ensalada Fiesta de Montaña de Flores y Frutas",
+          "ingredients_en": [
+            "Cheese",
+            "Salad",
+            "Fruit",
+            "Vegetables",
+            "Dressing"
+          ],
+          "ingredients_es": [
+            "Queso",
+            "Ensalada",
+            "Fruta",
+            "Verduras",
+            "Aderezo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/9c09f9afd31b5abd2187fc79adbd3d79486304.jpg.webp",
+          "price": 177.0,
+          "spec_original": "1人份，需要芝士yes，ENGLISH，中文已选，无需no"
+        },
+        {
+          "name_original": "安格斯牛排能量沙拉",
+          "name_en": "Angus Beef Energy Salad",
+          "name_es": "Ensalada Energética de Carne Angus",
+          "ingredients_en": [
+            "Beef",
+            "Salad",
+            "Sauce",
+            "Lettuce",
+            "Tomato"
+          ],
+          "ingredients_es": [
+            "Carne",
+            "Ensalada",
+            "Salsa",
+            "Lechuga",
+            "Tomate"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/3f49b014130e0e1be71b0578e9499fd6352330.jpg.webp",
+          "price": 234.0,
+          "spec_original": "1人份，需要酱汁yes，无需no"
+        },
+        {
+          "name_original": "意式三文鱼佐布拉塔奶酪沙拉(New)",
+          "name_en": "Italian Salmon with Burrata Salad",
+          "name_es": "Salmón Italiano con Ensalada de Burrata",
+          "ingredients_en": [
+            "Salmon",
+            "Burrata",
+            "Salad",
+            "Tomato",
+            "Olive"
+          ],
+          "ingredients_es": [
+            "Salmón",
+            "Burrata",
+            "Ensalada",
+            "Tomate",
+            "Aceite"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/352be711178484087093b18fdafffd3c409735.jpg",
+          "price": 78.0,
+          "spec_original": ""
+        },
+        {
+          "name_original": "安格斯牛排盛宴",
+          "name_en": "Angus Steak Feast",
+          "name_es": "Fiesta de Bistec Angus",
+          "ingredients_en": [
+            "Steak",
+            "Salt",
+            "Pepper",
+            "Garlic",
+            "Butter"
+          ],
+          "ingredients_es": [
+            "Bistec",
+            "Sal",
+            "Pimienta",
+            "Ajo",
+            "Mantequilla"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/0c0acb41554d58719675ba631d6e31a7296382.jpg.webp",
+          "price": 176.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "墨西哥牛肉鳄梨酱碗(New)",
+          "name_en": "Mexican Beef Guacamole Bowl",
+          "name_es": "Tazón de Guacamole con Carne de Res Mexicana",
+          "ingredients_en": [
+            "Beef",
+            "Avocado",
+            "Tomato",
+            "Onion",
+            "Lime"
+          ],
+          "ingredients_es": [
+            "Carne",
+            "Aguacate",
+            "Tomate",
+            "Cebolla",
+            "Limón"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/c5ba4344cc69ffb94f165b7a388f610a313134.jpg.webp",
+          "price": 136.0,
+          "spec_original": "标准 regular"
+        }
+      ]
+    },
+    "Yue Lai Ji Cantonese Restaurant (Chinese)": {
+      "original_name": "粤来记港式餐厅（打浦路店）",
+      "english_name": "Yue Lai Ji Cantonese Restaurant",
+      "cuisine": "Chinese",
+      "display_name": "Yue Lai Ji Cantonese Restaurant (Chinese)",
+      "poi_icon": "http://p0.meituan.net/business/1f9ed519acd8ec1708dfa841f29efc17396441.png",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "烧鸭饭（烧鸭+小菜+米饭）",
+          "name_en": "Roast Duck Rice",
+          "name_es": "Arroz con Pato Asado",
+          "ingredients_en": [
+            "Duck",
+            "Rice",
+            "Vegetables",
+            "Soy",
+            "Ginger"
+          ],
+          "ingredients_es": [
+            "Pato",
+            "Arroz",
+            "Verduras",
+            "Salsa de Soja",
+            "Jengibre"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/c478f4203c65578bf0e4675be61a9f2a5726510.jpg.webp",
+          "price": 117.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "招牌广式烧鸭",
+          "name_en": "Signature Cantonese Roast Duck",
+          "name_es": "Pato Asado Cantonés Firmado",
+          "ingredients_en": [
+            "Duck",
+            "Soy",
+            "Honey",
+            "Garlic",
+            "Five-spice"
+          ],
+          "ingredients_es": [
+            "Pato",
+            "Salsa de soja",
+            "Miel",
+            "Ajo",
+            "Cinco especias"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/c3f0f71ac58fddf165ad545528a6f468555741.png.webp",
+          "price": 174.0,
+          "spec_original": "例"
+        },
+        {
+          "name_original": "需要餐具（需要几份下几份餐具）",
+          "name_en": "Cutlery Needed",
+          "name_es": "Cubiertos Necesarios",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/wmproduct/bf8cc8a4ac2bcfbd997549bb3934351677111.jpg.webp",
+          "price": 3.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "烧味双拼饭（双拼自选+小菜+米饭）",
+          "name_en": "Roast Meat Combo Rice",
+          "name_es": "Arroz Combo de Carne Asada",
+          "ingredients_en": [
+            "Chicken",
+            "Soy",
+            "Salt",
+            "Rice",
+            "Vegetable"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Salsa de Soja",
+            "Sal",
+            "Arroz",
+            "Vegetal"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/9f1a6cc1e998c2f0b23604f6da13fa5a5177837.jpg.webp",
+          "price": 180.0,
+          "spec_original": "豉油鸡+盐焗鸡"
+        }
+      ]
+    },
+    "Meizhou Dongpo (Chinese)": {
+      "original_name": "眉州东坡(来福士人民广场店)",
+      "english_name": "Meizhou Dongpo",
+      "cuisine": "Chinese",
+      "display_name": "Meizhou Dongpo (Chinese)",
+      "poi_icon": "http://p0.meituan.net/waimaipoi/ecec8fa98ae7f6c5a5e1d46fe30c893c603057.png",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "三合一筷子",
+          "name_en": "Three-in-One Chopsticks",
+          "name_es": "Palillos Tres en Uno",
+          "ingredients_en": [
+            "Noodles",
+            "Vegetables",
+            "Sauce",
+            "Meat",
+            "Egg"
+          ],
+          "ingredients_es": [
+            "Fideos",
+            "Verduras",
+            "Salsa",
+            "Carne",
+            "Huevo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/145a497d22048aab940803ec600078ce99358.jpg.webp",
+          "price": 1.5,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "“宫保鸡丁”超级食盒",
+          "name_en": "Kung Pao Chicken",
+          "name_es": "Pollo Kung Pao",
+          "ingredients_en": [
+            "Chicken",
+            "Peanut",
+            "Pepper",
+            "Garlic",
+            "Onion"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Cacahuate",
+            "Pimiento",
+            "Ajo",
+            "Cebolla"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/b5ea3f63073e82ad638d2e3c0dbd71f73836904.jpg.webp",
+          "price": 116.7,
+          "spec_original": "标准套餐，番茄炒蛋"
+        }
+      ]
+    },
+    "Hema Fresh (Fruit and Fresh Produce)": {
+      "original_name": "盒马鲜生代购（老西门南六店）",
+      "english_name": "Hema Fresh",
+      "cuisine": "Fruit and Fresh Produce",
+      "display_name": "Hema Fresh (Fruit and Fresh Produce)",
+      "poi_icon": "http://p0.meituan.net/waimaipoi/76b4025502ce7488ca4088f27dd747d4350159.png",
+      "order_count": 6,
+      "foods": [
+        {
+          "name_original": "云南超大蓝莓 125g(果径22mm+)",
+          "name_en": "Yunnan Super Large Blueberry",
+          "name_es": "Arándano Super Grande de Yunnan",
+          "ingredients_en": [
+            "Blueberry"
+          ],
+          "ingredients_es": [
+            "Arándano"
+          ],
+          "picture": "http://p1.meituan.net/sgopen/f559b5386b3a9e79a6e79dabd75f5ee6470126.jpg.webp",
+          "price": 17.67,
+          "spec_original": "125g"
+        },
+        {
+          "name_original": "【鲜果切】佳农菲律宾黑钻菠萝果切 500g",
+          "name_en": "Fresh Fruit Cut",
+          "name_es": "Corte de Fruta Fresca",
+          "ingredients_en": [
+            "Pineapple"
+          ],
+          "ingredients_es": [
+            "Piña"
+          ],
+          "picture": "http://p0.meituan.net/sgopen/46c77c8a5a25316900b35118ac7963a2406675.jpg.webp",
+          "price": 22.09,
+          "spec_original": "500g"
+        },
+        {
+          "name_original": "【鲜果切】3拼(西瓜+凤梨+蜜瓜) 500g",
+          "name_en": "Fresh Fruit Platter",
+          "name_es": "Plato de Frutas Frescas",
+          "ingredients_en": [
+            "Watermelon",
+            "Pineapple",
+            "Melon"
+          ],
+          "ingredients_es": [
+            "Sandía",
+            "Piña",
+            "Melón"
+          ],
+          "picture": "http://p0.meituan.net/sgopen/75790fcf1fcab27fbcc3ebe6aff247c1965678.png.webp",
+          "price": 51.36,
+          "spec_original": "500g"
+        },
+        {
+          "name_original": "【鲜果切】2拼(西瓜+凤梨) 500g",
+          "name_en": "Fresh Fruit Cut",
+          "name_es": "Corte de Frutas Frescas",
+          "ingredients_en": [
+            "Watermelon",
+            "Pineapple"
+          ],
+          "ingredients_es": [
+            "Sandía",
+            "Piña"
+          ],
+          "picture": "http://p1.meituan.net/sgopen/6caa762a8e3d4ac6dd1db18a52303d6e338869.jpg.webp",
+          "price": 51.46,
+          "spec_original": "500g"
+        },
+        {
+          "name_original": "云南大蓝莓 125g(果径均18mm) (无果粉)",
+          "name_en": "Yunnan Blueberry",
+          "name_es": "Arándano de Yunnan",
+          "ingredients_en": [
+            "Blueberry"
+          ],
+          "ingredients_es": [
+            "Arándano"
+          ],
+          "picture": "http://p1.meituan.net/sgopen/dafbd7ccbbd62bbdde500ebdfdb93558174521.jpg.webp",
+          "price": 15.74,
+          "spec_original": "125g"
+        },
+        {
+          "name_original": "【鲜果切】4拼(蜜瓜+西瓜+甜瓜+青提)550g",
+          "name_en": "Fresh Fruit Platter",
+          "name_es": "Plato de Frutas Frescas",
+          "ingredients_en": [
+            "Melon",
+            "Watermelon",
+            "Sweet Melon",
+            "Grapes"
+          ],
+          "ingredients_es": [
+            "Melón",
+            "Sandía",
+            "Melón Dulce",
+            "Uvas"
+          ],
+          "picture": "http://p0.meituan.net/sgopen/915c2883981214bc864b3c7310eb03de1424045.jpg.webp",
+          "price": 77.38,
+          "spec_original": "550g"
+        },
+        {
+          "name_original": "Driscoll's 红树莓 125g",
+          "name_en": "Driscoll's Red Raspberry 125g",
+          "name_es": "Frambuesa Roja Driscoll's 125g",
+          "ingredients_en": [
+            "Raspberry"
+          ],
+          "ingredients_es": [
+            "Frambuesa"
+          ],
+          "picture": "http://p0.meituan.net/sgopen/694364a2894f0a8bd5b43eaaccb4c2ef45552.webp",
+          "price": 20.3,
+          "spec_original": "125g"
+        },
+        {
+          "name_original": "川娃子 皮蛋烧椒酱 230g",
+          "name_en": "Spicy Century Egg Sauce",
+          "name_es": "Salsa Picante de Huevo Centenario",
+          "ingredients_en": [
+            "Egg",
+            "Pepper",
+            "Sauce"
+          ],
+          "ingredients_es": [
+            "Huevo",
+            "Pimiento",
+            "Salsa"
+          ],
+          "picture": "http://p1.meituan.net/sgopen/e9ba8e573b54f04b0572b3daf02524d1250162.jpg.webp",
+          "price": 14.65,
+          "spec_original": "230g"
+        },
+        {
+          "name_original": "川娃子 油泼辣子 230g",
+          "name_en": "Spicy Oil",
+          "name_es": "Aceite Picante",
+          "ingredients_en": [
+            "Oil",
+            "Chili",
+            "Garlic",
+            "Salt",
+            "Sugar"
+          ],
+          "ingredients_es": [
+            "Aceite",
+            "Chile",
+            "Ajo",
+            "Sal",
+            "Azúcar"
+          ],
+          "picture": "http://p1.meituan.net/sgopen/354ad0246bcd905d7a210fa81be02023735914.jpg.webp",
+          "price": 14.65,
+          "spec_original": "230g"
+        },
+        {
+          "name_original": "Driscoll's 云南蓝莓 125g(果径18mm)",
+          "name_en": "Driscoll's Yunnan Blueberry",
+          "name_es": "Arándano de Yunnan de Driscoll's",
+          "ingredients_en": [
+            "Blueberry"
+          ],
+          "ingredients_es": [
+            "Arándano"
+          ],
+          "picture": "http://p0.meituan.net/sgopen/0dc95ad22bfa63544f115baa12154237627386.jpg.webp",
+          "price": 29.4,
+          "spec_original": "125g"
+        },
+        {
+          "name_original": "【鲜果切】草莓随手杯 250g",
+          "name_en": "Fresh Fruit Cup Strawberry",
+          "name_es": "Copa de Fruta Fresca Fresa",
+          "ingredients_en": [
+            "Strawberry",
+            "Fruit",
+            "Cup"
+          ],
+          "ingredients_es": [
+            "Fresa",
+            "Fruta",
+            "Copa"
+          ],
+          "picture": "http://p0.meituan.net/sgopen/5886dc61157e2ee6dd1bf214f17b745a750981.png.webp",
+          "price": 33.96,
+          "spec_original": "250g"
+        },
+        {
+          "name_original": "Driscoll's 云南蓝莓125g(单果14mm)",
+          "name_en": "Driscoll's Yunnan Blueberry 125g",
+          "name_es": "Arándano de Yunnan de Driscoll's 125g",
+          "ingredients_en": [
+            "Blueberry"
+          ],
+          "ingredients_es": [
+            "Arándano"
+          ],
+          "picture": "http://p0.meituan.net/sgopen/57dda920d6c63875630bb60250daeaa0908489.jpg.webp",
+          "price": 54.42,
+          "spec_original": "125g"
+        },
+        {
+          "name_original": "【鲜果切】2拼(鲜橙+红心火龙果) 450g",
+          "name_en": "Fresh Fruit Cut",
+          "name_es": "Corte de Frutas Frescas",
+          "ingredients_en": [
+            "Orange",
+            "Dragonfruit"
+          ],
+          "ingredients_es": [
+            "Naranja",
+            "Fruta del Dragón"
+          ],
+          "picture": "http://p0.meituan.net/sgopen/067dd04f8b696baf926780e112077170698134.jpg.webp",
+          "price": 44.25,
+          "spec_original": "450g"
+        }
+      ]
+    },
+    "Masala Mantra (Indian)": {
+      "original_name": "印度餐厅Masala Mantra(日月光店)",
+      "english_name": "Masala Mantra",
+      "cuisine": "Indian",
+      "display_name": "Masala Mantra (Indian)",
+      "poi_icon": "http://p0.meituan.net/farmer/8759affa8da854ee434dc86566fc1159961976.png",
+      "order_count": 2,
+      "foods": [
+        {
+          "name_original": "我不要辣I dont eat spicy",
+          "name_en": "I Don't Eat Spicy",
+          "name_es": "No Como Picante",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/wmproduct/674f97e66dff4eb247565f382d56126e129062.jpg.webp",
+          "price": 0.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "不要No neeed",
+          "name_en": "No need",
+          "name_es": "No necesita",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p1.meituan.net/xianfu/2f9c83998d4695e599951084a65f783144872.png.webp",
+          "price": 0.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "👍奶油咖喱鸡 Butter Chicken",
+          "name_en": "Butter Chicken",
+          "name_es": "Pollo Mantequilla",
+          "ingredients_en": [
+            "Chicken",
+            "Butter",
+            "Curry",
+            "Tomato",
+            "Cream"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Mantequilla",
+            "Curry",
+            "Tomate",
+            "Crema"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/d634e4895f47953863c5b3f61652de34128102.jpg.webp",
+          "price": 192.6,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "需要餐具 I want cutlery",
+          "name_en": "I want cutlery",
+          "name_es": "Quiero cubiertos",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/xianfu/84b3a3c6ac50b00c7569af7040155f3c778860.png.webp",
+          "price": 0.5,
+          "spec_original": "1克"
+        },
+        {
+          "name_original": "Chcieken Curry Set招牌鸡肉咖喱套餐",
+          "name_en": "Chicken Curry Set",
+          "name_es": "Conjunto de Curry de Pollo",
+          "ingredients_en": [
+            "Chicken",
+            "Curry",
+            "Rice",
+            "Cream",
+            "Spices"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Curry",
+            "Arroz",
+            "Crema",
+            "Especias"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/b06d5b7b42c4f8ec44f6b35be0f85ded3807778.png.webp",
+          "price": 207.2,
+          "spec_original": "招牌奶油咖喱鸡半分 H-BC(200克)x1，炭烤微辣无骨鸡3块 Chi Tikka 3pcs(3块)x1，中式米饭Chinese rice(125克)x1，不要No neeed(1人份)x1"
+        },
+        {
+          "name_original": "不需要 No Need",
+          "name_en": "No Need",
+          "name_es": "No Necesita",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p1.meituan.net/xianfu/2f9c83998d4695e599951084a65f783144872.png.webp",
+          "price": 0.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "印式鸡肉焖饭Chicken Biryani",
+          "name_en": "Chicken Biryani",
+          "name_es": "Biryani de Pollo",
+          "ingredients_en": [
+            "Chicken",
+            "Rice",
+            "Spices",
+            "Onion",
+            "Yogurt"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Arroz",
+            "Especias",
+            "Cebolla",
+            "Yogur"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/a8abdff3e66cd64b6062624bff98027a3441543.jpg.webp",
+          "price": 178.8,
+          "spec_original": "350克"
+        },
+        {
+          "name_original": "印试招牌咖喱鱼套餐 Best Fish Curry Set",
+          "name_en": "Best Fish Curry Set",
+          "name_es": "Mejor Conjunto de Curry de Pescado",
+          "ingredients_en": [
+            "Fish",
+            "Curry",
+            "Rice"
+          ],
+          "ingredients_es": [
+            "Pescado",
+            "Curry",
+            "Arroz"
+          ],
+          "picture": "http://p0.meituan.net/xianfu/a063db86cbc21bd7cf266f89479f08c6462035.png.webp",
+          "price": 137.4,
+          "spec_original": "印式特色咖喱鱼 Fish Curry(1人份)x1，不要No neeed(1人份)x1，不需要 No Need(1人份)x1，中式米饭Chinese rice(125克)x1"
+        }
+      ]
+    },
+    "Crab Essence (Chinese)": {
+      "original_name": "蟹醇香·纯蟹黄拌饭（大悦城店）",
+      "english_name": "Crab Essence",
+      "cuisine": "Chinese",
+      "display_name": "Crab Essence (Chinese)",
+      "poi_icon": "http://p0.meituan.net/business/91aa0288bd8dcc03056f955e79d4148081969.jpg",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "【一口三鲜】蟹肉蟹黄蟹膏捞饭",
+          "name_en": "Three Fresh Bites Crab Rice",
+          "name_es": "Arroz de Cangrejo Tres Frescos",
+          "ingredients_en": [
+            "Crab",
+            "Rice",
+            "Egg",
+            "Sauce",
+            "Cilantro"
+          ],
+          "ingredients_es": [
+            "Cangrejo",
+            "Arroz",
+            "Huevo",
+            "Salsa",
+            "Cilantro"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/02774835f62838a31fbe5549cf995649678460.jpg.webp",
+          "price": 158.0,
+          "spec_original": "尝鲜一份料"
+        }
+      ]
+    },
+    "Lechuanhui Douhua Sichuan Cuisine (Chinese)": {
+      "original_name": "乐川汇·豆花川菜（人民广场店）",
+      "english_name": "Lechuanhui Douhua Sichuan Cuisine",
+      "cuisine": "Chinese",
+      "display_name": "Lechuanhui Douhua Sichuan Cuisine (Chinese)",
+      "poi_icon": "http://p1.meituan.net/business/3c7713d56037309e35cca6ba6ac2eb4a1210272.png",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "需要餐具（免费供应·请勿浪费）",
+          "name_en": "Cutlery Required (Free Supply, Please Do Not Waste)",
+          "name_es": "Cubiertos Requeridos (Suministro Gratis, Por Favor No Desperdiciar)",
+          "ingredients_en": [
+            "Cutlery"
+          ],
+          "ingredients_es": [
+            "Cubiertos"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/9917e3c0528f27bc37019053dafd8668194229.jpg.webp",
+          "price": 0.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "川味口水鸡·单人套餐",
+          "name_en": "Sichuan Mouthwatering Chicken - Single Serving",
+          "name_es": "Pollo Sichuan que hace agua la boca - Porción Individual",
+          "ingredients_en": [
+            "Chicken",
+            "Rice",
+            "Vegetables"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Arroz",
+            "Verduras"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/d25da2a082a109c03c36cd6a26f277c1455129.jpg.webp",
+          "price": 36.8,
+          "spec_original": "川味口水鸡（鸡肉约300克）(1人份)x1，随机素菜（不接受指定菜品）(1人份)x1，米饭(1人份)x1"
+        },
+        {
+          "name_original": "米饭",
+          "name_en": "Rice",
+          "name_es": "Arroz",
+          "ingredients_en": [
+            "Rice"
+          ],
+          "ingredients_es": [
+            "Arroz"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/05c5518e8cb64f5b5ed2efe26e5dc604334233.jpg.webp",
+          "price": 6.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "农家一碗香",
+          "name_en": "Fragrant Farm Bowl",
+          "name_es": "Tazón Fragante de Granja",
+          "ingredients_en": [
+            "Rice",
+            "Vegetables",
+            "Chicken",
+            "Sauce",
+            "Egg"
+          ],
+          "ingredients_es": [
+            "Arroz",
+            "Verduras",
+            "Pollo",
+            "Salsa",
+            "Huevo"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/00adbe23fb097e75227ab7935bd63196406046.jpg.webp",
+          "price": 76.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "成都小酥肉（小份）",
+          "name_en": "Chengdu Crispy Pork (Small Portion)",
+          "name_es": "Cerdo Crujiente de Chengdu (Porción Pequeña)",
+          "ingredients_en": [
+            "Pork",
+            "Flour",
+            "Spices",
+            "Garlic",
+            "Chili"
+          ],
+          "ingredients_es": [
+            "Cerdo",
+            "Harina",
+            "Especias",
+            "Ajo",
+            "Chile"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/b38db541d6b7e58e6837093950197629555885.jpg.webp",
+          "price": 19.6,
+          "spec_original": "1人份"
+        }
+      ]
+    },
+    "Food Bowl (Chinese)": {
+      "original_name": "超级碗FOODBOWL(上海新天地店)",
+      "english_name": "Food Bowl",
+      "cuisine": "Chinese",
+      "display_name": "Food Bowl (Chinese)",
+      "poi_icon": "http://p1.meituan.net/waimaipoi/8d269607db5a4da14252090d0ea7ec72755187.png",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "畅销十年闭眼入-蜜汁鸡腿超级碗",
+          "name_en": "Honey Glazed Chicken Leg Super Bowl",
+          "name_es": "Muslo de Pollo Glaseado con Miel Super Bowl",
+          "ingredients_en": [
+            "Chicken",
+            "Rice",
+            "Corn",
+            "Vegetables",
+            "Salsa"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Arroz",
+            "Maíz",
+            "Verduras",
+            "Salsa"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/a266d852e608d58125e7715021874d19320901.jpg.webp",
+          "price": 107.7,
+          "spec_original": "1人份，谷物饭，玉米粒，混合烤蔬菜，苹果莎莎，蔓越莓干，融合油醋汁"
+        },
+        {
+          "name_original": "蜜汁鸡腿超级碗套餐",
+          "name_en": "Honey Chicken Leg Super Bowl Set",
+          "name_es": "Conjunto de Super Bowl de Pierna de Pollo con Miel",
+          "ingredients_en": [
+            "Chicken",
+            "Rice",
+            "Beans",
+            "Vegetables",
+            "Honey"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Arroz",
+            "Frijoles",
+            "Verduras",
+            "Miel"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/adc3e8feed5435d22dbcc321dd0f165f251925.jpg.webp",
+          "price": 85.28,
+          "spec_original": "蜜汁鸡腿超级碗(1人份，意式蔬菜烩饭，黑豆酱，混合烤蔬菜，番茄莎莎，黄金椰米，任性不加酱)x1，蜂蜜红枣茶(1人份)x1，够了够了，真够了(1人份)x1"
+        },
+        {
+          "name_original": "需要餐具【按餐量点选】",
+          "name_en": "Cutlery Needed",
+          "name_es": "Utensilios Necesarios",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/wmproduct/fa446cc6be9404a3c437cc277a687c0d35851.jpg.webp",
+          "price": 0.0,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "番茄牛肉鲜蔬锅暖食套餐",
+          "name_en": "Tomato Beef and Fresh Vegetable Hot Pot Meal Set",
+          "name_es": "Conjunto de Comida de Olla Caliente de Carne de Res y Verduras Frescas con Tomate",
+          "ingredients_en": [
+            "Tomato",
+            "Beef",
+            "Vegetable",
+            "Tofu",
+            "Tea"
+          ],
+          "ingredients_es": [
+            "Tomate",
+            "Carne",
+            "Verdura",
+            "Tofu",
+            "Té"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/4908c5747b39b84139386470a8cbd2eb451901.jpg.webp",
+          "price": 99.8,
+          "spec_original": "新疆番茄牛肉鲜蔬锅(1人份，新疆番茄牛肉鲜蔬锅)x1，日式七味豆腐(2块)(1人份)x1，蜂蜜红枣茶(1人份)x1"
+        }
+      ]
+    },
+    "Kebabs on the Grille (Indian)": {
+      "original_name": "克比叔叔印度餐厅KebabsontheGrille(人民广场店)",
+      "english_name": "Kebabs on the Grille",
+      "cuisine": "Indian",
+      "display_name": "Kebabs on the Grille (Indian)",
+      "poi_icon": "http://p0.meituan.net/business/bc44a307e16d87ee82c89cc933677be1870292.png",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "餐具cutlery",
+          "name_en": "Cutlery",
+          "name_es": "Cubiertos",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/wmproduct/d3b6347c5e22d9d160b07f40b075850695466.jpg.webp",
+          "price": 1.0,
+          "spec_original": "2克"
+        },
+        {
+          "name_original": "必点榜|印式招牌咖喱鸡套餐Chicken curry set",
+          "name_en": "Chicken Curry Set",
+          "name_es": "Conjunto de Curry de Pollo",
+          "ingredients_en": [
+            "Chicken",
+            "Curry",
+            "Naan",
+            "Rice",
+            "Spices"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Curry",
+            "Naan",
+            "Arroz",
+            "Especias"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/e802bd0f154286f1ad25b8df12119dac1022765.jpg.webp",
+          "price": 189.0,
+          "spec_original": "碳烤微辣咖喱鸡Chicken tikka masala(1人份，微辣Mild spicy)x1，不需要no need(100克)x1，印式原味薄饼plain naan(1个，不辣Not spicy)x1，中国米饭Chinese rice(1)x1"
+        },
+        {
+          "name_original": "必点榜|招牌羊肉咖喱套餐Lamb curry set",
+          "name_en": "Lamb Curry Set",
+          "name_es": "Conjunto de Curry de Cordero",
+          "ingredients_en": [
+            "Lamb",
+            "Curry",
+            "Rice",
+            "Masala",
+            "Spices"
+          ],
+          "ingredients_es": [
+            "Cordero",
+            "Curry",
+            "Arroz",
+            "Masala",
+            "Especias"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/c643392bc54d1e53d4ae16f4853d42b4377736.jpg.webp",
+          "price": 68.0,
+          "spec_original": "印式羊肉咖喱lamb masala(1人份)x1，不需要no need(100克)x1，不需要(120克)x1，中国米饭Chinese rice(1)x1"
+        },
+        {
+          "name_original": "印式奶油咖喱鸡+中国米饭+小吃自选BTC+Chn",
+          "name_en": "Butter Chicken",
+          "name_es": "Pollo con Mantequilla",
+          "ingredients_en": [
+            "Chicken",
+            "Butter",
+            "Naan",
+            "Rice",
+            "Curry"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Mantequilla",
+            "Naan",
+            "Arroz",
+            "Curry"
+          ],
+          "picture": "http://p0.meituan.net/xianfu/3afb46ac80071f6ce4e411f4403c176c525349.png.webp",
+          "price": 85.0,
+          "spec_original": "印式奶油咖喱鸡Butter chicken(1人份)x1，印式原味薄饼plain naan(1个，不辣Not spicy)x1，中国米饭Chinese rice(1)x1"
+        },
+        {
+          "name_original": "原味黄油薄饼 Butter Naan",
+          "name_en": "Butter Naan",
+          "name_es": "Naan de Mantequilla",
+          "ingredients_en": [
+            "Butter",
+            "Flour",
+            "Yeast",
+            "Salt",
+            "Water"
+          ],
+          "ingredients_es": [
+            "Mantequilla",
+            "Harina",
+            "Levadura",
+            "Sal",
+            "Agua"
+          ],
+          "picture": "",
+          "price": 16.0,
+          "spec_original": "1个"
+        },
+        {
+          "name_original": "碳烤秘制香菜薄荷酱腌制无骨鸡肉Haryali chicken",
+          "name_en": "Haryali Chicken",
+          "name_es": "Pollo Haryali",
+          "ingredients_en": [
+            "Chicken",
+            "Cilantro",
+            "Mint",
+            "Spices",
+            "Lime"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Cilantro",
+            "Menta",
+            "Especias",
+            "Limón"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/c22549a0e2ae34c73dcdfc49a20405621033452.jpg.webp",
+          "price": 68.0,
+          "spec_original": "200克，微辣Mild spicy"
+        }
+      ]
+    },
+    "Dayuan Roujiamo (Chinese)": {
+      "original_name": "大元肉夹馍（凉皮·卤肉饭·人民广场店）",
+      "english_name": "Dayuan Roujiamo",
+      "cuisine": "Chinese",
+      "display_name": "Dayuan Roujiamo (Chinese)",
+      "poi_icon": "http://p0.meituan.net/business/588cb4890d18805eaffbf88eae6cc91275932.jpg",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "大元肉夹馍+麻酱凉皮",
+          "name_en": "Roujiamo and Cold Noodles with Sesame Sauce",
+          "name_es": "Roujiamo y Fideos Fríos con Salsa de Sésamo",
+          "ingredients_en": [
+            "Pork",
+            "Bread",
+            "Noodles",
+            "Sesame",
+            "Pepper"
+          ],
+          "ingredients_es": [
+            "Cerdo",
+            "Pan",
+            "Fideos",
+            "Sésamo",
+            "Pimiento"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/a702f0573cc7d9bc029540b6fe0096a2405865.jpg.webp",
+          "price": 159.2,
+          "spec_original": "1人份，不辣，默认青椒洋葱，不加"
+        }
+      ]
+    },
+    "Currify (Indian Fusion)": {
+      "original_name": "CURRIFY·黑盐（印度融合菜K11店）",
+      "english_name": "Currify",
+      "cuisine": "Indian Fusion",
+      "display_name": "Currify (Indian Fusion)",
+      "poi_icon": "http://p0.meituan.net/business/f1a678bf48ef528cfc3a4234189c60ca147793.png",
+      "order_count": 1,
+      "foods": [
+        {
+          "name_original": "需要餐具",
+          "name_en": "Utensils Needed",
+          "name_es": "Utensilios Necesarios",
+          "ingredients_en": [],
+          "ingredients_es": [],
+          "picture": "http://p0.meituan.net/xianfu/f9efad2d73108eecc3b2c612c100371c36667.jpg.webp",
+          "price": 3.5,
+          "spec_original": "1人份"
+        },
+        {
+          "name_original": "羊肉焖饭配酸奶酱Lamb Biryani",
+          "name_en": "Lamb Biryani",
+          "name_es": "Biryani de Cordero",
+          "ingredients_en": [
+            "Lamb",
+            "Rice",
+            "Yogurt",
+            "Spices",
+            "Onion"
+          ],
+          "ingredients_es": [
+            "Cordero",
+            "Arroz",
+            "Yogur",
+            "Especias",
+            "Cebolla"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/8589810e2c6e59d98541f8b1270ce25c4778172.jpg.webp",
+          "price": 120.0,
+          "spec_original": "大份"
+        },
+        {
+          "name_original": "人气咖喱+主食+小吃+饮品",
+          "name_en": "Butter Chicken Meal",
+          "name_es": "Comida de Pollo Mantequilla",
+          "ingredients_en": [
+            "Butter",
+            "Chicken",
+            "Naan",
+            "Spinach",
+            "Tea"
+          ],
+          "ingredients_es": [
+            "Mantequilla",
+            "Pollo",
+            "Naan",
+            "Espinaca",
+            "Té"
+          ],
+          "picture": "http://p1.meituan.net/wmproduct/57d9db8dc62045fce735b9f862ff2fe52578497.png.webp",
+          "price": 216.0,
+          "spec_original": "奶油鸡肉咖喱 Butter Chicken(大份)x1，原味烤饼Plan Naan(大份)x1，蒜泥烤饼Galic Naan(大份)x1，香料菠菜Masala Palak(大份)x1，柠檬冰茶Iced Tea(大份)x1"
+        },
+        {
+          "name_original": "奶油鸡肉咖喱 Butter Chicken",
+          "name_en": "Butter Chicken",
+          "name_es": "Pollo Mantequilla",
+          "ingredients_en": [
+            "Chicken",
+            "Butter",
+            "Cream",
+            "Curry",
+            "Tomato"
+          ],
+          "ingredients_es": [
+            "Pollo",
+            "Mantequilla",
+            "Crema",
+            "Curry",
+            "Tomate"
+          ],
+          "picture": "http://p0.meituan.net/wmproduct/bf2267e2deb0e2021a19bc9669c8f8f75002584.jpg.webp",
+          "price": 195.0,
+          "spec_original": "大份"
+        }
+      ]
+    }
+  }
+}
