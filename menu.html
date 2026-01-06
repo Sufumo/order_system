@@ -603,6 +603,311 @@
         .restaurant-section:nth-child(3) { animation-delay: 0.2s; }
         .restaurant-section:nth-child(4) { animation-delay: 0.3s; }
         .restaurant-section:nth-child(5) { animation-delay: 0.4s; }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(44, 44, 44, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes modalSlideIn {
+            from { opacity: 0; transform: translateY(-30px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #fdfcfa 0%, var(--bg-warm) 100%);
+            border-radius: 16px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 85vh;
+            overflow: hidden;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
+            animation: modalSlideIn 0.4s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            padding: 30px 35px 20px;
+            border-bottom: 1px solid var(--border-light);
+            text-align: center;
+        }
+
+        .modal-header h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .modal-header p {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .modal-body {
+            padding: 25px 35px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .modal-dishes-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .modal-dish-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 0;
+            border-bottom: 1px dotted var(--border-light);
+        }
+
+        .modal-dish-item:last-child {
+            border-bottom: none;
+        }
+
+        .modal-dish-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px var(--shadow-soft);
+            flex-shrink: 0;
+        }
+
+        .modal-dish-image.placeholder {
+            background: linear-gradient(135deg, #e8e5e0 0%, #d8d5d0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.65rem;
+            font-style: italic;
+        }
+
+        .modal-dish-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .modal-dish-name {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 2px;
+        }
+
+        .modal-dish-restaurant {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .modal-dish-quantity {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-burgundy);
+            background: linear-gradient(135deg, #f8f5f0 0%, #f0ebe3 100%);
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+            flex-shrink: 0;
+        }
+
+        .modal-input-section {
+            margin-top: 10px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .modal-input-label {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .modal-input-hint {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .modal-input {
+            width: 100%;
+            padding: 14px 18px;
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1rem;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            background: white;
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+        }
+
+        .modal-input:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 3px rgba(184, 149, 107, 0.15);
+        }
+
+        .modal-input::placeholder {
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .modal-footer {
+            padding: 20px 35px 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            border-top: 1px solid var(--border-light);
+            background: rgba(249, 247, 243, 0.5);
+        }
+
+        .modal-btn {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modal-btn-cancel {
+            background: transparent;
+            border: 1px solid var(--border-light);
+            color: var(--text-muted);
+        }
+
+        .modal-btn-cancel:hover {
+            background: var(--bg-cream);
+            border-color: var(--text-muted);
+            color: var(--text-dark);
+        }
+
+        .modal-btn-confirm {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #a07850 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(184, 149, 107, 0.3);
+        }
+
+        .modal-btn-confirm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(184, 149, 107, 0.4);
+        }
+
+        .modal-total {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #f8f5f0 0%, #f0ebe3 100%);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .modal-total-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 5px;
+        }
+
+        .modal-total-count {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--accent-burgundy);
+        }
+
+        /* Modal Responsive */
+        @media (max-width: 600px) {
+            .modal-overlay {
+                padding: 10px;
+                align-items: flex-end;
+            }
+
+            .modal-content {
+                max-height: 90vh;
+                border-radius: 16px 16px 0 0;
+            }
+
+            .modal-header {
+                padding: 20px 20px 15px;
+            }
+
+            .modal-header h3 {
+                font-size: 1.5rem;
+            }
+
+            .modal-body {
+                padding: 20px;
+            }
+
+            .modal-dish-item {
+                gap: 10px;
+            }
+
+            .modal-dish-image {
+                width: 50px;
+                height: 50px;
+            }
+
+            .modal-dish-name {
+                font-size: 1rem;
+            }
+
+            .modal-footer {
+                padding: 15px 20px 25px;
+                flex-direction: column;
+            }
+
+            .modal-btn {
+                width: 100%;
+                padding: 14px 20px;
+            }
+
+            .modal-btn-confirm {
+                order: -1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -627,6 +932,34 @@
     <div class="submit-section">
         <span class="submit-message" id="submitMessage">Select 9 dishes to continue</span>
         <button class="submit-btn" id="submitBtn" disabled>Submit Selection</button>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal-overlay" id="confirmModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirm Selection</h3>
+                <p>Please review your chosen dishes</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-total">
+                    <div class="modal-total-label">Total Dishes</div>
+                    <div class="modal-total-count" id="modalTotalCount">9</div>
+                </div>
+                <ul class="modal-dishes-list" id="modalDishesList">
+                    <!-- Dishes will be populated here -->
+                </ul>
+                <div class="modal-input-section">
+                    <label class="modal-input-label" for="guestName">Your Name</label>
+                    <p class="modal-input-hint">Optional — How should we address you?</p>
+                    <input type="text" class="modal-input" id="guestName" placeholder="e.g., Mr. Smith, Maria, Table 5...">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn modal-btn-cancel" id="modalCancel">Cancel</button>
+                <button class="modal-btn modal-btn-confirm" id="modalConfirm">Confirm & Download</button>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -705,6 +1038,11 @@
             const itemId = `${shopKey}_${index}`;
             const ingredientsEn = (food.ingredients_en || food.ingredients || []).join(', ');
             const ingredientsEs = (food.ingredients_es || []).join(', ');
+            
+            food = {
+                ...food,
+                restaurant_name: shopKey
+            }
             
             return `
                 <tr class="menu-item" data-item-id="${itemId}">
@@ -822,9 +1160,73 @@
             }
         }
 
-        // Submit selection
+        // Show confirmation modal
+        function showConfirmModal() {
+            const modal = document.getElementById('confirmModal');
+            const dishesList = document.getElementById('modalDishesList');
+            const totalCount = document.getElementById('modalTotalCount');
+            const guestInput = document.getElementById('guestName');
+            
+            // Reset guest name input
+            guestInput.value = '';
+            
+            // Update total count
+            totalCount.textContent = getTotalQuantity();
+            
+            // Build dishes list
+            let listHtml = '';
+            for (const [itemId, item] of Object.entries(selectedItems)) {
+                const food = item.food;
+                const imageHtml = food.picture 
+                    ? `<img src="${food.picture}" alt="${food.name_en}" class="modal-dish-image" onerror="this.outerHTML='<div class=\\'modal-dish-image placeholder\\'>No Image</div>'">`
+                    : `<div class="modal-dish-image placeholder">No Image</div>`;
+                
+                listHtml += `
+                    <li class="modal-dish-item">
+                        ${imageHtml}
+                        <div class="modal-dish-info">
+                            <div class="modal-dish-name">${food.name_en || food.name_original}</div>
+                            <div class="modal-dish-restaurant">${food.restaurant_name}</div>
+                        </div>
+                        <div class="modal-dish-quantity">× ${item.quantity}</div>
+                    </li>
+                `;
+            }
+            dishesList.innerHTML = listHtml;
+            
+            // Show modal
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Hide confirmation modal
+        function hideConfirmModal() {
+            const modal = document.getElementById('confirmModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Submit selection - show modal first
         document.getElementById('submitBtn').addEventListener('click', function() {
             if (getTotalQuantity() !== 9) return;
+            showConfirmModal();
+        });
+
+        // Modal cancel button
+        document.getElementById('modalCancel').addEventListener('click', hideConfirmModal);
+
+        // Close modal when clicking overlay
+        document.getElementById('confirmModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hideConfirmModal();
+            }
+        });
+
+        // Modal confirm button - actual submission
+        document.getElementById('modalConfirm').addEventListener('click', function() {
+            if (getTotalQuantity() !== 9) return;
+
+            const guestName = document.getElementById('guestName').value.trim();
 
             const selectedFoods = [];
             for (const [itemId, item] of Object.entries(selectedItems)) {
@@ -835,13 +1237,14 @@
                     name_original: food.name_original,
                     ingredients_en: food.ingredients_en || food.ingredients || [],
                     ingredients_es: food.ingredients_es || [],
-                    price: food.price,
+                    restaurant_name: food.restaurant_name,
                     picture: food.picture,
                     quantity: item.quantity
                 });
             }
 
             const exportData = {
+                guest_name: guestName || '',
                 total_dishes: getTotalQuantity(),
                 unique_dishes: selectedFoods.length,
                 selected_at: new Date().toISOString(),
@@ -859,7 +1262,15 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
+            hideConfirmModal();
             alert('Selection downloaded successfully!');
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                hideConfirmModal();
+            }
         });
 
         // Initialize
