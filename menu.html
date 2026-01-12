@@ -790,6 +790,23 @@
             font-style: italic;
         }
 
+        .modal-input.error {
+            border-color: var(--accent-burgundy);
+            box-shadow: 0 0 0 3px rgba(122, 62, 62, 0.15);
+        }
+
+        .modal-input-error {
+            color: var(--accent-burgundy);
+            font-size: 0.85rem;
+            margin-top: 6px;
+            font-style: italic;
+            display: none;
+        }
+
+        .modal-input-error.show {
+            display: block;
+        }
+
         .modal-footer {
             padding: 20px 35px 30px;
             display: flex;
@@ -914,11 +931,11 @@
     <div class="container">
         <header>
             <h1>Menu Selection</h1>
-            <p>Please select exactly 9 dishes from our curated collection</p>
+            <p id="headerDescription">Please select exactly <span id="requiredDishesText">15</span> dishes from our curated collection</p>
         </header>
 
         <div class="selection-counter" id="selectionCounter">
-            <span class="count" id="selectedCount">0</span><span class="count">/9</span>
+            <span class="count" id="selectedCount">0</span><span class="count" id="requiredDishesCount">/15</span>
             <div class="label">dishes selected</div>
         </div>
 
@@ -930,7 +947,7 @@
     </div>
 
     <div class="submit-section">
-        <span class="submit-message" id="submitMessage">Select 9 dishes to continue</span>
+        <span class="submit-message" id="submitMessage">Select 15 dishes to continue</span>
         <button class="submit-btn" id="submitBtn" disabled>Submit Selection</button>
     </div>
 
@@ -944,15 +961,16 @@
             <div class="modal-body">
                 <div class="modal-total">
                     <div class="modal-total-label">Total Dishes</div>
-                    <div class="modal-total-count" id="modalTotalCount">9</div>
+                    <div class="modal-total-count" id="modalTotalCount">15</div>
                 </div>
                 <ul class="modal-dishes-list" id="modalDishesList">
                     <!-- Dishes will be populated here -->
                 </ul>
                 <div class="modal-input-section">
                     <label class="modal-input-label" for="guestName">Your Name</label>
-                    <p class="modal-input-hint">Optional — How should we address you?</p>
-                    <input type="text" class="modal-input" id="guestName" placeholder="e.g., Mr. Smith, Maria, Table 5...">
+                    <p class="modal-input-hint">Required — How should we address you?</p>
+                    <input type="text" class="modal-input" id="guestName" placeholder="e.g., Mr. Smith, Maria, Table 5..." required>
+                    <div class="modal-input-error" id="guestNameError">Please enter your name to continue</div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -963,8 +981,26 @@
     </div>
 
     <script>
+        // Global configuration: Number of dishes required
+        const REQUIRED_DISHES = 15;
+        
         let menuData = null;
         let selectedItems = {}; // { itemId: { food: foodData, quantity: number } }
+
+        // Initialize page with required dishes count
+        function initializePage() {
+            // Update header description
+            const requiredDishesText = document.getElementById('requiredDishesText');
+            if (requiredDishesText) {
+                requiredDishesText.textContent = REQUIRED_DISHES;
+            }
+            
+            // Update selection counter
+            const requiredDishesCount = document.getElementById('requiredDishesCount');
+            if (requiredDishesCount) {
+                requiredDishesCount.textContent = `/${REQUIRED_DISHES}`;
+            }
+        }
 
         // Load the JSON data
         async function loadMenuData() {
@@ -1087,8 +1123,8 @@
                     const totalQty = getTotalQuantity();
                     
                     if (action === 'increase') {
-                        // Can't add more if already at 9 total
-                        if (totalQty >= 9) return;
+                        // Can't add more if already at required total
+                        if (totalQty >= REQUIRED_DISHES) return;
                         
                         currentQty++;
                         if (!selectedItems[itemId]) {
@@ -1125,7 +1161,7 @@
         function updatePlusButtons() {
             const totalQty = getTotalQuantity();
             document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
-                btn.disabled = totalQty >= 9;
+                btn.disabled = totalQty >= REQUIRED_DISHES;
             });
         }
 
@@ -1139,24 +1175,49 @@
 
             countEl.textContent = count;
 
-            if (count === 9) {
+            if (count === REQUIRED_DISHES) {
                 counter.classList.add('complete');
                 message.textContent = 'Perfect! You can now submit your selection';
                 message.className = 'submit-message success';
                 btn.disabled = false;
                 btn.classList.add('ready');
-            } else if (count > 9) {
+            } else if (count > REQUIRED_DISHES) {
                 counter.classList.remove('complete');
-                message.textContent = `Too many selections (${count}/9). Please remove some items.`;
+                message.textContent = `Too many selections (${count}/${REQUIRED_DISHES}). Please remove some items.`;
                 message.className = 'submit-message error';
                 btn.disabled = true;
                 btn.classList.remove('ready');
             } else {
                 counter.classList.remove('complete');
-                message.textContent = `Select ${9 - count} more dish${9 - count !== 1 ? 'es' : ''} to continue`;
+                const remaining = REQUIRED_DISHES - count;
+                message.textContent = `Select ${remaining} more dish${remaining !== 1 ? 'es' : ''} to continue`;
                 message.className = 'submit-message';
                 btn.disabled = true;
                 btn.classList.remove('ready');
+            }
+        }
+
+        // Clear input error state
+        function clearInputError() {
+            const guestInput = document.getElementById('guestName');
+            const errorMsg = document.getElementById('guestNameError');
+            if (guestInput) {
+                guestInput.classList.remove('error');
+            }
+            if (errorMsg) {
+                errorMsg.classList.remove('show');
+            }
+        }
+
+        // Show input error state
+        function showInputError() {
+            const guestInput = document.getElementById('guestName');
+            const errorMsg = document.getElementById('guestNameError');
+            if (guestInput) {
+                guestInput.classList.add('error');
+            }
+            if (errorMsg) {
+                errorMsg.classList.add('show');
             }
         }
 
@@ -1167,8 +1228,9 @@
             const totalCount = document.getElementById('modalTotalCount');
             const guestInput = document.getElementById('guestName');
             
-            // Reset guest name input
+            // Reset guest name input and clear errors
             guestInput.value = '';
+            clearInputError();
             
             // Update total count
             totalCount.textContent = getTotalQuantity();
@@ -1208,7 +1270,7 @@
 
         // Submit selection - show modal first
         document.getElementById('submitBtn').addEventListener('click', function() {
-            if (getTotalQuantity() !== 9) return;
+            if (getTotalQuantity() !== REQUIRED_DISHES) return;
             showConfirmModal();
         });
 
@@ -1224,9 +1286,20 @@
 
         // Modal confirm button - actual submission
         document.getElementById('modalConfirm').addEventListener('click', function() {
-            if (getTotalQuantity() !== 9) return;
+            if (getTotalQuantity() !== REQUIRED_DISHES) return;
 
-            const guestName = document.getElementById('guestName').value.trim();
+            const guestNameInput = document.getElementById('guestName');
+            const guestName = guestNameInput.value.trim();
+            
+            // Validate required field
+            if (!guestName) {
+                showInputError();
+                guestNameInput.focus();
+                return;
+            }
+            
+            // Clear any errors
+            clearInputError();
 
             const selectedFoods = [];
             for (const [itemId, item] of Object.entries(selectedItems)) {
@@ -1273,7 +1346,16 @@
             }
         });
 
+        // Clear error when user starts typing in guest name input
+        const guestNameInput = document.getElementById('guestName');
+        if (guestNameInput) {
+            guestNameInput.addEventListener('input', function() {
+                clearInputError();
+            });
+        }
+
         // Initialize
+        initializePage();
         loadMenuData();
     </script>
 </body>
